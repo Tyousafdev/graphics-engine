@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/mty/Documents/gameEngine/lib/glfw/include -I/home/mty/Documents/gameEngine/lib/glfw/src
+C_INCLUDES = -I/home/mty/Documents/scratch-game-engine/lib/glfw/include -I/home/mty/Documents/scratch-game-engine/lib/glfw/src
 
 C_FLAGS = -std=c99 -fPIC -Wall
 

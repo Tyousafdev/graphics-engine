@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mty/Documents/gameEngine/lib/glfw/deps/glad_gl.c" "examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o" "gcc" "examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o.d"
-  "/home/mty/Documents/gameEngine/lib/glfw/examples/sharing.c" "examples/CMakeFiles/sharing.dir/sharing.c.o" "gcc" "examples/CMakeFiles/sharing.dir/sharing.c.o.d"
+  "/home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c" "examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o" "gcc" "examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o.d"
+  "/home/mty/Documents/scratch-game-engine/lib/glfw/examples/sharing.c" "examples/CMakeFiles/sharing.dir/sharing.c.o" "gcc" "examples/CMakeFiles/sharing.dir/sharing.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

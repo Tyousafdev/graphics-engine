@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mty/Documents/gameEngine/lib/glfw/deps/glad_vulkan.c" "tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o" "gcc" "tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o.d"
-  "/home/mty/Documents/gameEngine/lib/glfw/tests/triangle-vulkan.c" "tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o" "gcc" "tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o.d"
+  "/home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_vulkan.c" "tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o" "gcc" "tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o.d"
+  "/home/mty/Documents/scratch-game-engine/lib/glfw/tests/triangle-vulkan.c" "tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o" "gcc" "tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

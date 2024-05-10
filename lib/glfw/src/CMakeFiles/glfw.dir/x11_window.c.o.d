@@ -1,9 +1,9 @@
 src/CMakeFiles/glfw.dir/x11_window.c.o: \
- /home/mty/Documents/gameEngine/lib/glfw/src/x11_window.c \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/x11_window.c \
  /usr/include/stdc-predef.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/internal.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/glfw_config.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/../include/GLFW/glfw3.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/internal.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/glfw_config.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/../include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -21,7 +21,7 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/x11_platform.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/x11_platform.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h /usr/include/signal.h \
@@ -58,7 +58,7 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: \
  /usr/include/X11/extensions/xfixeswire.h \
  /usr/include/X11/extensions/shape.h \
  /usr/include/X11/extensions/shapeconst.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/posix_thread.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/posix_thread.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -78,10 +78,10 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/posix_time.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/xkb_unicode.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/glx_context.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/linux_joystick.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/posix_time.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/xkb_unicode.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/glx_context.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/linux_joystick.h \
  /usr/include/linux/input.h /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
@@ -105,8 +105,8 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: \
  /usr/include/asm-generic/posix_types.h \
  /usr/include/linux/input-event-codes.h /usr/include/linux/limits.h \
  /usr/include/regex.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/egl_context.h \
- /home/mty/Documents/gameEngine/lib/glfw/src/osmesa_context.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/egl_context.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/src/osmesa_context.h \
  /usr/include/X11/cursorfont.h /usr/include/X11/Xmd.h \
  /usr/include/string.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \

@@ -1,8 +1,8 @@
 examples/CMakeFiles/windows.dir/windows.c.o: \
- /home/mty/Documents/gameEngine/lib/glfw/examples/windows.c \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/examples/windows.c \
  /usr/include/stdc-predef.h \
- /home/mty/Documents/gameEngine/lib/glfw/deps/glad/gl.h \
- /home/mty/Documents/gameEngine/lib/glfw/deps/glad/khrplatform.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/gl.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -19,7 +19,7 @@ examples/CMakeFiles/windows.dir/windows.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/mty/Documents/gameEngine/lib/glfw/include/GLFW/glfw3.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \

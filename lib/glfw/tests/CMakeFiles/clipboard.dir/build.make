@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mty/Documents/gameEngine/lib/glfw
+CMAKE_SOURCE_DIR = /home/mty/Documents/scratch-game-engine/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mty/Documents/gameEngine/lib/glfw
+CMAKE_BINARY_DIR = /home/mty/Documents/scratch-game-engine/lib/glfw
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/clipboard.dir/depend.make
@@ -72,44 +72,44 @@ include tests/CMakeFiles/clipboard.dir/flags.make
 tests/CMakeFiles/clipboard.dir/clipboard.c.o: tests/CMakeFiles/clipboard.dir/flags.make
 tests/CMakeFiles/clipboard.dir/clipboard.c.o: tests/clipboard.c
 tests/CMakeFiles/clipboard.dir/clipboard.c.o: tests/CMakeFiles/clipboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/gameEngine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/clipboard.dir/clipboard.c.o"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/clipboard.dir/clipboard.c.o -MF CMakeFiles/clipboard.dir/clipboard.c.o.d -o CMakeFiles/clipboard.dir/clipboard.c.o -c /home/mty/Documents/gameEngine/lib/glfw/tests/clipboard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/clipboard.dir/clipboard.c.o"
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/clipboard.dir/clipboard.c.o -MF CMakeFiles/clipboard.dir/clipboard.c.o.d -o CMakeFiles/clipboard.dir/clipboard.c.o -c /home/mty/Documents/scratch-game-engine/lib/glfw/tests/clipboard.c
 
 tests/CMakeFiles/clipboard.dir/clipboard.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/clipboard.dir/clipboard.c.i"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/gameEngine/lib/glfw/tests/clipboard.c > CMakeFiles/clipboard.dir/clipboard.c.i
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/scratch-game-engine/lib/glfw/tests/clipboard.c > CMakeFiles/clipboard.dir/clipboard.c.i
 
 tests/CMakeFiles/clipboard.dir/clipboard.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/clipboard.dir/clipboard.c.s"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/gameEngine/lib/glfw/tests/clipboard.c -o CMakeFiles/clipboard.dir/clipboard.c.s
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/scratch-game-engine/lib/glfw/tests/clipboard.c -o CMakeFiles/clipboard.dir/clipboard.c.s
 
 tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o: tests/CMakeFiles/clipboard.dir/flags.make
 tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o: deps/getopt.c
 tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o: tests/CMakeFiles/clipboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/gameEngine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o -MF CMakeFiles/clipboard.dir/__/deps/getopt.c.o.d -o CMakeFiles/clipboard.dir/__/deps/getopt.c.o -c /home/mty/Documents/gameEngine/lib/glfw/deps/getopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o"
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o -MF CMakeFiles/clipboard.dir/__/deps/getopt.c.o.d -o CMakeFiles/clipboard.dir/__/deps/getopt.c.o -c /home/mty/Documents/scratch-game-engine/lib/glfw/deps/getopt.c
 
 tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/clipboard.dir/__/deps/getopt.c.i"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/gameEngine/lib/glfw/deps/getopt.c > CMakeFiles/clipboard.dir/__/deps/getopt.c.i
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/scratch-game-engine/lib/glfw/deps/getopt.c > CMakeFiles/clipboard.dir/__/deps/getopt.c.i
 
 tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/clipboard.dir/__/deps/getopt.c.s"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/gameEngine/lib/glfw/deps/getopt.c -o CMakeFiles/clipboard.dir/__/deps/getopt.c.s
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/scratch-game-engine/lib/glfw/deps/getopt.c -o CMakeFiles/clipboard.dir/__/deps/getopt.c.s
 
 tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o: tests/CMakeFiles/clipboard.dir/flags.make
 tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o: deps/glad_gl.c
 tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o: tests/CMakeFiles/clipboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/gameEngine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o -MF CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o -c /home/mty/Documents/gameEngine/lib/glfw/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o"
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o -MF CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o -c /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c
 
 tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/clipboard.dir/__/deps/glad_gl.c.i"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/gameEngine/lib/glfw/deps/glad_gl.c > CMakeFiles/clipboard.dir/__/deps/glad_gl.c.i
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c > CMakeFiles/clipboard.dir/__/deps/glad_gl.c.i
 
 tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/clipboard.dir/__/deps/glad_gl.c.s"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/gameEngine/lib/glfw/deps/glad_gl.c -o CMakeFiles/clipboard.dir/__/deps/glad_gl.c.s
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c -o CMakeFiles/clipboard.dir/__/deps/glad_gl.c.s
 
 # Object files for target clipboard
 clipboard_OBJECTS = \
@@ -129,18 +129,18 @@ tests/clipboard: /usr/lib/x86_64-linux-gnu/libm.so
 tests/clipboard: /usr/lib/x86_64-linux-gnu/librt.a
 tests/clipboard: /usr/lib/x86_64-linux-gnu/libm.so
 tests/clipboard: tests/CMakeFiles/clipboard.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mty/Documents/gameEngine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable clipboard"
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clipboard.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable clipboard"
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clipboard.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/clipboard.dir/build: tests/clipboard
 .PHONY : tests/CMakeFiles/clipboard.dir/build
 
 tests/CMakeFiles/clipboard.dir/clean:
-	cd /home/mty/Documents/gameEngine/lib/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/clipboard.dir/cmake_clean.cmake
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw/tests && $(CMAKE_COMMAND) -P CMakeFiles/clipboard.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/clipboard.dir/clean
 
 tests/CMakeFiles/clipboard.dir/depend:
-	cd /home/mty/Documents/gameEngine/lib/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mty/Documents/gameEngine/lib/glfw /home/mty/Documents/gameEngine/lib/glfw/tests /home/mty/Documents/gameEngine/lib/glfw /home/mty/Documents/gameEngine/lib/glfw/tests /home/mty/Documents/gameEngine/lib/glfw/tests/CMakeFiles/clipboard.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mty/Documents/scratch-game-engine/lib/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mty/Documents/scratch-game-engine/lib/glfw /home/mty/Documents/scratch-game-engine/lib/glfw/tests /home/mty/Documents/scratch-game-engine/lib/glfw /home/mty/Documents/scratch-game-engine/lib/glfw/tests /home/mty/Documents/scratch-game-engine/lib/glfw/tests/CMakeFiles/clipboard.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tests/CMakeFiles/clipboard.dir/depend
 

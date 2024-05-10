@@ -1,7 +1,7 @@
 tests/CMakeFiles/events.dir/__/deps/getopt.c.o: \
- /home/mty/Documents/gameEngine/lib/glfw/deps/getopt.c \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/deps/getopt.c \
  /usr/include/stdc-predef.h \
- /home/mty/Documents/gameEngine/lib/glfw/deps/getopt.h \
+ /home/mty/Documents/scratch-game-engine/lib/glfw/deps/getopt.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
