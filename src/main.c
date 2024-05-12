@@ -41,6 +41,19 @@ int main(void)
         return -1;
     }
 
+
+    float vertices[] = {
+    -0.5f, -0.5f, 0.0f,
+     0.5f, -0.5f, 0.0f,
+     0.0f,  0.5f, 0.0f
+    };
+
+
+    unsigned int CUBE;
+    glGenBuffers(1, &CUBE);
+    glBindBuffer(GL_ARRAY_BUFFER, CUBE);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
