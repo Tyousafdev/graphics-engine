@@ -1,0 +1,5 @@
+-Wall
+-std=c11
+-lfmt
+-Ilib/glad/include 
+-Ilib/glfw/include
