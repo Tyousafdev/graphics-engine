@@ -1,5 +1,10 @@
 -Wall
--std=c11
+-std=c++17
 -lfmt
 -Ilib/glad/include 
 -Ilib/glfw/include
+-Iheader
+-Iimgui
+-lstdc++
+-lc++
+-llibstdc++
