@@ -84,6 +84,16 @@ int main()
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
+
+
+
+    bool drawtriangle = true;
+
+    float size = 1.0f;
+    float xAxis = 0.0f;
+    ourShader.use();
+    ourShader.setFloat("size", 1.0f);
+
     // ImGui setup
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
@@ -114,7 +124,21 @@ int main()
                 // render the triangle
                 ourShader.use();
                 glBindVertexArray(VAO);
-                glDrawArrays(GL_TRIANGLES, 0, 3);
+
+                if(drawtriangle)
+                    glDrawArrays(GL_TRIANGLES, 0, 3);
+
+                ImGui::Checkbox("drawtriangle", &drawtriangle);
+                ImGui::SliderFloat("size", &size, 0.2f, 2.0f);
+                ImGui::SliderFloat("xAxis", &xAxis, -0.5f, 0.5f);
+
+
+                ourShader.use();
+                ourShader.setFloat("xAxis", xAxis);
+                ourShader.setFloat("size", size);
+
+
+
 
                 // Switch to settings screen button
                 if (ImGui::Button("Settings"))
