@@ -1,8 +1,8 @@
 tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: \
- /home/mty/Documents/scratch-game-engine/lib/glfw/tests/glfwinfo.c \
+ /home/mty/Documents/graphics-engine/lib/glfw/tests/glfwinfo.c \
  /usr/include/stdc-predef.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/gl.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/khrplatform.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/gl.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -19,10 +19,10 @@ tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/vulkan.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/vk_platform.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/vulkan.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/vk_platform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/include/GLFW/glfw3.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/include/GLFW/glfw3.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -62,4 +62,4 @@ tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/getopt.h
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/getopt.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/mty/Documents/scratch-game-engine/lib/glfw/examples
+# Install script for directory: /home/mty/Documents/graphics-engine/lib/glfw/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

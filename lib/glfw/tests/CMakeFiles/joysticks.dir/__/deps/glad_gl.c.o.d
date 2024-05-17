@@ -1,5 +1,5 @@
 tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o: \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -52,8 +52,8 @@ tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/gl.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/khrplatform.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/gl.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \

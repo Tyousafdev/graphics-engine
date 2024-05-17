@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mty/Documents/scratch-game-engine/lib/glfw
+CMAKE_SOURCE_DIR = /home/mty/Documents/graphics-engine/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mty/Documents/scratch-game-engine/lib/glfw
+CMAKE_BINARY_DIR = /home/mty/Documents/graphics-engine/lib/glfw
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/offscreen.dir/depend.make
@@ -72,30 +72,30 @@ include examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: examples/offscreen.c
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: examples/CMakeFiles/offscreen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/offscreen.dir/offscreen.c.o -MF CMakeFiles/offscreen.dir/offscreen.c.o.d -o CMakeFiles/offscreen.dir/offscreen.c.o -c /home/mty/Documents/scratch-game-engine/lib/glfw/examples/offscreen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/graphics-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o"
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/offscreen.dir/offscreen.c.o -MF CMakeFiles/offscreen.dir/offscreen.c.o.d -o CMakeFiles/offscreen.dir/offscreen.c.o -c /home/mty/Documents/graphics-engine/lib/glfw/examples/offscreen.c
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/offscreen.dir/offscreen.c.i"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/scratch-game-engine/lib/glfw/examples/offscreen.c > CMakeFiles/offscreen.dir/offscreen.c.i
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/graphics-engine/lib/glfw/examples/offscreen.c > CMakeFiles/offscreen.dir/offscreen.c.i
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/offscreen.dir/offscreen.c.s"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/scratch-game-engine/lib/glfw/examples/offscreen.c -o CMakeFiles/offscreen.dir/offscreen.c.s
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/graphics-engine/lib/glfw/examples/offscreen.c -o CMakeFiles/offscreen.dir/offscreen.c.s
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o: deps/glad_gl.c
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/offscreen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o -MF CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o -c /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/graphics-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o"
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o -MF CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o -c /home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/offscreen.dir/__/deps/glad_gl.c.i"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c > CMakeFiles/offscreen.dir/__/deps/glad_gl.c.i
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c > CMakeFiles/offscreen.dir/__/deps/glad_gl.c.i
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/offscreen.dir/__/deps/glad_gl.c.s"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.s
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.s
 
 # Object files for target offscreen
 offscreen_OBJECTS = \
@@ -113,18 +113,18 @@ examples/offscreen: /usr/lib/x86_64-linux-gnu/libm.so
 examples/offscreen: /usr/lib/x86_64-linux-gnu/librt.a
 examples/offscreen: /usr/lib/x86_64-linux-gnu/libm.so
 examples/offscreen: examples/CMakeFiles/offscreen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable offscreen"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offscreen.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mty/Documents/graphics-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable offscreen"
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offscreen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/offscreen.dir/build: examples/offscreen
 .PHONY : examples/CMakeFiles/offscreen.dir/build
 
 examples/CMakeFiles/offscreen.dir/clean:
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/offscreen.dir/cmake_clean.cmake
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/offscreen.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/offscreen.dir/clean
 
 examples/CMakeFiles/offscreen.dir/depend:
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mty/Documents/scratch-game-engine/lib/glfw /home/mty/Documents/scratch-game-engine/lib/glfw/examples /home/mty/Documents/scratch-game-engine/lib/glfw /home/mty/Documents/scratch-game-engine/lib/glfw/examples /home/mty/Documents/scratch-game-engine/lib/glfw/examples/CMakeFiles/offscreen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mty/Documents/graphics-engine/lib/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mty/Documents/graphics-engine/lib/glfw /home/mty/Documents/graphics-engine/lib/glfw/examples /home/mty/Documents/graphics-engine/lib/glfw /home/mty/Documents/graphics-engine/lib/glfw/examples /home/mty/Documents/graphics-engine/lib/glfw/examples/CMakeFiles/offscreen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/CMakeFiles/offscreen.dir/depend
 

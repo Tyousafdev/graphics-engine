@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mty/Documents/scratch-game-engine/lib/glfw
+CMAKE_SOURCE_DIR = /home/mty/Documents/graphics-engine/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mty/Documents/scratch-game-engine/lib/glfw
+CMAKE_BINARY_DIR = /home/mty/Documents/graphics-engine/lib/glfw
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/heightmap.dir/depend.make
@@ -72,30 +72,30 @@ include examples/CMakeFiles/heightmap.dir/flags.make
 examples/CMakeFiles/heightmap.dir/heightmap.c.o: examples/CMakeFiles/heightmap.dir/flags.make
 examples/CMakeFiles/heightmap.dir/heightmap.c.o: examples/heightmap.c
 examples/CMakeFiles/heightmap.dir/heightmap.c.o: examples/CMakeFiles/heightmap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/heightmap.dir/heightmap.c.o"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/heightmap.dir/heightmap.c.o -MF CMakeFiles/heightmap.dir/heightmap.c.o.d -o CMakeFiles/heightmap.dir/heightmap.c.o -c /home/mty/Documents/scratch-game-engine/lib/glfw/examples/heightmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/graphics-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/heightmap.dir/heightmap.c.o"
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/heightmap.dir/heightmap.c.o -MF CMakeFiles/heightmap.dir/heightmap.c.o.d -o CMakeFiles/heightmap.dir/heightmap.c.o -c /home/mty/Documents/graphics-engine/lib/glfw/examples/heightmap.c
 
 examples/CMakeFiles/heightmap.dir/heightmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/heightmap.dir/heightmap.c.i"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/scratch-game-engine/lib/glfw/examples/heightmap.c > CMakeFiles/heightmap.dir/heightmap.c.i
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/graphics-engine/lib/glfw/examples/heightmap.c > CMakeFiles/heightmap.dir/heightmap.c.i
 
 examples/CMakeFiles/heightmap.dir/heightmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/heightmap.dir/heightmap.c.s"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/scratch-game-engine/lib/glfw/examples/heightmap.c -o CMakeFiles/heightmap.dir/heightmap.c.s
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/graphics-engine/lib/glfw/examples/heightmap.c -o CMakeFiles/heightmap.dir/heightmap.c.s
 
 examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/heightmap.dir/flags.make
 examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: deps/glad_gl.c
 examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/heightmap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -MF CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -c /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mty/Documents/graphics-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o"
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -MF CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -c /home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c
 
 examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c > CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c > CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i
 
 examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s
 
 # Object files for target heightmap
 heightmap_OBJECTS = \
@@ -113,18 +113,18 @@ examples/heightmap: /usr/lib/x86_64-linux-gnu/libm.so
 examples/heightmap: /usr/lib/x86_64-linux-gnu/librt.a
 examples/heightmap: /usr/lib/x86_64-linux-gnu/libm.so
 examples/heightmap: examples/CMakeFiles/heightmap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mty/Documents/scratch-game-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable heightmap"
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heightmap.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mty/Documents/graphics-engine/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable heightmap"
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heightmap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/heightmap.dir/build: examples/heightmap
 .PHONY : examples/CMakeFiles/heightmap.dir/build
 
 examples/CMakeFiles/heightmap.dir/clean:
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/heightmap.dir/cmake_clean.cmake
+	cd /home/mty/Documents/graphics-engine/lib/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/heightmap.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/heightmap.dir/clean
 
 examples/CMakeFiles/heightmap.dir/depend:
-	cd /home/mty/Documents/scratch-game-engine/lib/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mty/Documents/scratch-game-engine/lib/glfw /home/mty/Documents/scratch-game-engine/lib/glfw/examples /home/mty/Documents/scratch-game-engine/lib/glfw /home/mty/Documents/scratch-game-engine/lib/glfw/examples /home/mty/Documents/scratch-game-engine/lib/glfw/examples/CMakeFiles/heightmap.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mty/Documents/graphics-engine/lib/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mty/Documents/graphics-engine/lib/glfw /home/mty/Documents/graphics-engine/lib/glfw/examples /home/mty/Documents/graphics-engine/lib/glfw /home/mty/Documents/graphics-engine/lib/glfw/examples /home/mty/Documents/graphics-engine/lib/glfw/examples/CMakeFiles/heightmap.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/CMakeFiles/heightmap.dir/depend
 

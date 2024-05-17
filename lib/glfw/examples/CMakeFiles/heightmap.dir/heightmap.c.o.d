@@ -1,5 +1,5 @@
 examples/CMakeFiles/heightmap.dir/heightmap.c.o: \
- /home/mty/Documents/scratch-game-engine/lib/glfw/examples/heightmap.c \
+ /home/mty/Documents/graphics-engine/lib/glfw/examples/heightmap.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -56,10 +56,10 @@ examples/CMakeFiles/heightmap.dir/heightmap.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h /usr/include/assert.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/gl.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/khrplatform.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/gl.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/include/GLFW/glfw3.h
+ /home/mty/Documents/graphics-engine/lib/glfw/include/GLFW/glfw3.h

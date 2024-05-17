@@ -1,5 +1,5 @@
 tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o: \
- /home/mty/Documents/scratch-game-engine/lib/glfw/tests/triangle-vulkan.c \
+ /home/mty/Documents/graphics-engine/lib/glfw/tests/triangle-vulkan.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -74,10 +74,10 @@ tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/vulkan.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/vk_platform.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/vulkan.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/vk_platform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/include/GLFW/glfw3.h
+ /home/mty/Documents/graphics-engine/lib/glfw/include/GLFW/glfw3.h

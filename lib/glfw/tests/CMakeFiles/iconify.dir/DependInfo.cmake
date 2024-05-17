@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mty/Documents/scratch-game-engine/lib/glfw/deps/getopt.c" "tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o" "gcc" "tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o.d"
-  "/home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad_gl.c" "tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o" "gcc" "tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o.d"
-  "/home/mty/Documents/scratch-game-engine/lib/glfw/tests/iconify.c" "tests/CMakeFiles/iconify.dir/iconify.c.o" "gcc" "tests/CMakeFiles/iconify.dir/iconify.c.o.d"
+  "/home/mty/Documents/graphics-engine/lib/glfw/deps/getopt.c" "tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o" "gcc" "tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o.d"
+  "/home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c" "tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o" "gcc" "tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o.d"
+  "/home/mty/Documents/graphics-engine/lib/glfw/tests/iconify.c" "tests/CMakeFiles/iconify.dir/iconify.c.o" "gcc" "tests/CMakeFiles/iconify.dir/iconify.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

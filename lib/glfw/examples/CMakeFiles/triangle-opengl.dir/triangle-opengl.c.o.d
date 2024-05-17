@@ -1,8 +1,8 @@
 examples/CMakeFiles/triangle-opengl.dir/triangle-opengl.c.o: \
- /home/mty/Documents/scratch-game-engine/lib/glfw/examples/triangle-opengl.c \
+ /home/mty/Documents/graphics-engine/lib/glfw/examples/triangle-opengl.c \
  /usr/include/stdc-predef.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/gl.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/glad/khrplatform.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/gl.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -19,9 +19,9 @@ examples/CMakeFiles/triangle-opengl.dir/triangle-opengl.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/include/GLFW/glfw3.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /home/mty/Documents/scratch-game-engine/lib/glfw/deps/linmath.h \
+ /home/mty/Documents/graphics-engine/lib/glfw/deps/linmath.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
