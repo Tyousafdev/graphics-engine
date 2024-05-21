@@ -3,7 +3,10 @@
 -lfmt
 -Ilib/glad/include 
 -Ilib/glfw/include
+-Ilib/glm
+-Iglm
 -Iheader
+-Ilib
 -Iimgui
 -lstdc++
 -lc++
