@@ -27,6 +27,7 @@ Screen currentScreen = Screen::MAIN_GAME;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
+void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 
 // settings
 const unsigned int SCR_WIDTH = 1000;
@@ -40,11 +41,35 @@ glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
 
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
+bool firstMouse = true;
+bool mouse_state = false;
+
+float yaw = -89.0f;
+float pitch = 0.0f;
+float lastX = SCR_WIDTH/2.0f;
+float lastY = SCR_HEIGHT/2.0f;
+float fov = 69.0f;
+float speed = 2.0f;
+float sens = 0.1f;
+float left = 0.0f;
+float up = 0.0f;
+float down = 0.0f;
+bool temp = false;
 
 
 
-
-
+glm::vec3 cubePositions[] = {
+        glm::vec3( 0.0f, 0.0f,  0.0f),
+        glm::vec3( 2.0f,  5.0f, -15.0f),
+        glm::vec3(-1.5f, -2.2f, -2.5f),
+        glm::vec3(-3.8f, -2.0f, -12.3f),
+        glm::vec3( 2.4f, -0.4f, -3.5f),
+        glm::vec3(-1.7f,  3.0f, -7.5f),
+        glm::vec3( 1.3f, -2.0f, -2.5f),
+        glm::vec3( 1.5f,  2.0f, -2.5f),
+        glm::vec3( 1.5f,  0.2f, -1.5f),
+        glm::vec3(-1.3f,  1.0f, -1.5f)
+    };
 int main()
 {
     // glfw: initialize and configure
@@ -86,6 +111,11 @@ int main()
     // ------------------------------------------------------------------
     
 
+
+
+
+    glfwSetCursorPosCallback(window, mouse_callback);
+    
     // number of textures // ID
     unsigned int texture0, texture1;
 
@@ -152,7 +182,7 @@ int main()
 
 
    
-float vertices[] = {
+    float vertices[] = {
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
          0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
          0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
@@ -197,19 +227,7 @@ float vertices[] = {
     };
 
 
-    glm::vec3 cubePositions[] = {
-        glm::vec3( 0.0f,  0.0f,  0.0f),
-        glm::vec3( 2.0f,  5.0f, -15.0f),
-        glm::vec3(-1.5f, -2.2f, -2.5f),
-        glm::vec3(-3.8f, -2.0f, -12.3f),
-        glm::vec3( 2.4f, -0.4f, -3.5f),
-        glm::vec3(-1.7f,  3.0f, -7.5f),
-        glm::vec3( 1.3f, -2.0f, -2.5f),
-        glm::vec3( 1.5f,  2.0f, -2.5f),
-        glm::vec3( 1.5f,  0.2f, -1.5f),
-        glm::vec3(-1.3f,  1.0f, -1.5f)
-    };
-    unsigned int VBO, VAO;
+       unsigned int VBO, VAO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
 
@@ -292,12 +310,25 @@ float vertices[] = {
 
         model = glm::rotate(model, glm::radians(55.0f), glm::vec3(0.5f, 1.0f, 0.0f));
         //view = glm::translate(view, glm::vec3(0.0f,0.0f,-3.0f));
-        projection =  glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
-        // glm::ortho(0.0f, 11.2f, 0.0f, 11.02f, 0.0f, 100.0f);
+        projection = glm::perspective(glm::radians(fov), 800.0f / 600.0f, 0.1f, 100.0f);
+        //projection = glm::ortho(0.0f, 4.0f, 0.0f, 3.0f, 1.5f, 1000.0f);
+
+        // Adjust the size of the viewing volume
+        //float orthoSize = 1.0f; // Change this value to adjust the size
+        //projection = glm::ortho(-orthoSize, orthoSize, -orthoSize * (float)SCR_HEIGHT / (float)SCR_WIDTH, orthoSize * (float)SCR_HEIGHT / (float)SCR_WIDTH, 0.1f, 1000.0f);
  
-        glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+        //glm::mat4 view = glm::lookAt(cameraPos + cubePositions[0], cubePositions[0] + cameraFront, cameraUp);
+        //glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+        
 
+        glm::vec3 target = cubePositions[0];
+        glm::vec3 cameraTarget = cameraPos + cubePositions[0];
 
+        glm::mat4 view;
+        if (temp)
+            view = glm::lookAt(cameraTarget, target, cameraUp);
+        else
+            view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
 
         int modelLoc = glGetUniformLocation(ourShader.ID, "model");
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -324,21 +355,47 @@ float vertices[] = {
                 glBindVertexArray(VAO);
                 if(drawtriangle)
                     for(unsigned int i = 0; i < 10; i++)
-                    {
-                        // calculate the model matrix for each object and pass it to shader before drawing
+                    {   
+
+                        // Calculate the distance between the camera and the object
+                        //float dist = glm::length(cameraPos - cubePositions[i]);
+
+    // Calculate the scaling factor based on the distance
+                        //float scaleFactor = 1.0f / dist; // You can adjust this scaling factor as needed
+
+    // Calculate the model matrix for each object and pass it to the shader before drawing
+                        //glm::mat4 model = glm::mat4(1.0f);
+                        //model = glm::translate(model, cubePositions[i]);
+                        //model = glm::scale(model, glm::vec3(scaleFactor)); // Apply scaling
+                        //ourShader.setMat4("model", model);
+
+    // Draw the object
+                        //glDrawArrays(GL_TRIANGLES, 0, 36);     
+
+                        //calculate the model matrix for each object and pass it to shader before drawing
                         glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
                         model = glm::translate(model, cubePositions[i]);
                         float angle = 20.0f * i;
                         model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
                         ourShader.setMat4("model", model);
 
-            glDrawArrays(GL_TRIANGLES, 0, 36);
+                        glDrawArrays(GL_TRIANGLES, 0, 36);
                     }
 
                 ImGui::Checkbox("drawtriangle", &drawtriangle);
                 ImGui::SliderFloat("size", &size, -0.2f, 4.0f);
                 ImGui::SliderFloat("xAxis", &xAxis,  -5.0f, 5.5f);
                 ImGui::SliderFloat("yAxis", &yAxis,  -5.0f, 5.5f);
+                ImGui::Checkbox("mouse_state", &mouse_state);
+                ImGui::SliderFloat("camera speed", &speed, 1.0f, 20.0f);
+                ImGui::SliderFloat("sensitivity", &sens, 0.01f, 0.5f);
+                ImGui::Checkbox("camera view", &temp);
+
+
+                if(mouse_state)
+                    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+                else
+                    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 
 
 
@@ -393,13 +450,34 @@ float vertices[] = {
 
 // process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
 // ---------------------------------------------------------------------------------------------------------
+//
 void processInput(GLFWwindow *window)
 {
-    float cameraSpeed = 2.5f * deltaTime;
+    float cameraSpeed = speed * deltaTime;
 
 
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+
+
+    // Move cube left
+    if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
+        cubePositions[0].x -= cameraSpeed;
+
+    // Move cube right
+    if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+        cubePositions[0].x += cameraSpeed;
+
+    // Move cube up
+    //if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+    //    cubePositions[0].y += cameraSpeed;
+
+    // Move cube down
+    if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+        cubePositions[0].z -= cameraSpeed;
+
+    if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+        cubePositions[0].z += cameraSpeed;
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
         cameraPos += cameraSpeed * cameraFront;
@@ -413,6 +491,27 @@ void processInput(GLFWwindow *window)
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
 
+    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
+        cameraPos += cameraUp * cameraSpeed;
+
+    if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS)
+        cameraPos -= cameraUp * cameraSpeed;
+
+    static bool prev_key_state = false;
+    bool current_key_state = glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS;
+    if(current_key_state && !prev_key_state)
+    {
+        mouse_state = !mouse_state;
+       if (!mouse_state) { // If mouse_state is set to false, reset mouse position
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+            glfwSetCursorPos(window, SCR_WIDTH / 2.0, SCR_HEIGHT / 2.0); // Reset mouse position
+            firstMouse = true; // Set firstMouse to true to handle the next mouse movement correctly
+        } 
+       else {
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+       }
+    }
+    prev_key_state = current_key_state;
 
 
 
@@ -427,3 +526,52 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     glViewport(0, 0, width, height);
 }
 
+
+
+void mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+
+
+    if(firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+  
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos;
+    lastX = xpos;
+    lastY = ypos;
+    
+   if (!mouse_state) {
+        // Reset mouse position to the center of the window
+        //glfwSetCursorPos(window, SCR_WIDTH / 2.0, SCR_HEIGHT / 2.0);
+        // Calculate the offset from the center
+        xoffset = 0.0f;
+        yoffset = 0.0f;
+    } 
+
+    xoffset *= sens;
+    yoffset *= sens;
+
+    yaw += xoffset;
+    pitch += yoffset;
+
+
+    if(pitch > 89.0f)
+        pitch = 89.0f;
+    if(pitch < -89.0f)
+        pitch = -89.0f;
+
+
+    glm::vec3 direction;
+    direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    direction.y = sin(glm::radians(pitch));
+    direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    cameraFront = glm::normalize(direction);
+
+
+
+}
