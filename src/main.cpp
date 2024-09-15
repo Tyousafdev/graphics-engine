@@ -39,6 +39,12 @@ glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
 glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
 glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
 
+
+
+glm::vec3 cameraPosNon   = glm::vec3(0.0f, 0.0f,  3.0f);
+glm::vec3 cameraFrontNon = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraUpNon    = glm::vec3(0.0f, 1.0f,  0.0f);
+
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 bool firstMouse = true;
@@ -105,17 +111,18 @@ int main()
 
     // build and compile our shader program
     // ------------------------------------
+    Shader lightingShader("src/vertex_s.vs", "src/lightFragment.fs");
     Shader ourShader("src/vertex_s.vs", "src/fragment_s.fs"); // you can name your shader files however you like
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
-    
+
 
 
 
 
     glfwSetCursorPosCallback(window, mouse_callback);
-    
+
     // number of textures // ID
     unsigned int texture0, texture1;
 
@@ -178,10 +185,10 @@ int main()
     ourShader.setInt("texture1", 1);
 
 
-   
 
 
-   
+
+
     float vertices[] = {
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
          0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
@@ -242,18 +249,24 @@ int main()
     // texture coord attribute
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
-    
+
     glEnable(GL_DEPTH_TEST);
 
 
+    unsigned int lightVAO;
+    glGenVertexArrays(1, &lightVAO);
+    glBindVertexArray(lightVAO);
 
-   
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
 
 
 
 
 
 
+    
 
 
     bool drawtriangle = true;
@@ -305,6 +318,14 @@ int main()
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
+
+
+
+
+
+
+
+
         glm::mat4 model = glm::mat4(1.0f);
         glm::mat4 projection;
 
@@ -316,17 +337,18 @@ int main()
         // Adjust the size of the viewing volume
         //float orthoSize = 1.0f; // Change this value to adjust the size
         //projection = glm::ortho(-orthoSize, orthoSize, -orthoSize * (float)SCR_HEIGHT / (float)SCR_WIDTH, orthoSize * (float)SCR_HEIGHT / (float)SCR_WIDTH, 0.1f, 1000.0f);
- 
+
         //glm::mat4 view = glm::lookAt(cameraPos + cubePositions[0], cubePositions[0] + cameraFront, cameraUp);
         //glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-        
+
 
         glm::vec3 target = cubePositions[0];
         glm::vec3 cameraTarget = cameraPos + cubePositions[0];
-
+        glm::vec3 cameraTargetNon = cameraPos + cubePositions[0];
+        glm::vec3 cameraUpTemp    = glm::vec3(2.0f, 2.0f,  0.0f);
         glm::mat4 view;
         if (temp)
-            view = glm::lookAt(cameraTarget, target, cameraUp);
+            view = glm::lookAt(cameraTargetNon, target, cameraUpNon);
         else
             view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
 
@@ -355,7 +377,7 @@ int main()
                 glBindVertexArray(VAO);
                 if(drawtriangle)
                     for(unsigned int i = 0; i < 10; i++)
-                    {   
+                    {
 
                         // Calculate the distance between the camera and the object
                         //float dist = glm::length(cameraPos - cubePositions[i]);
@@ -370,7 +392,7 @@ int main()
                         //ourShader.setMat4("model", model);
 
     // Draw the object
-                        //glDrawArrays(GL_TRIANGLES, 0, 36);     
+                        //glDrawArrays(GL_TRIANGLES, 0, 36);
 
                         //calculate the model matrix for each object and pass it to shader before drawing
                         glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
@@ -544,7 +566,7 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
     float yoffset = lastY - ypos;
     lastX = xpos;
     lastY = ypos;
-    
+
    if (!mouse_state) {
         // Reset mouse position to the center of the window
         //glfwSetCursorPos(window, SCR_WIDTH / 2.0, SCR_HEIGHT / 2.0);
