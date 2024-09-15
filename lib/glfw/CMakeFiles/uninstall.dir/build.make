@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mty/Documents/graphics-engine/lib/glfw
+CMAKE_SOURCE_DIR = /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mty/Documents/graphics-engine/lib/glfw
+CMAKE_BINARY_DIR = /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/uninstall.dir/compiler_depend.make
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/mty/Documents/graphics-engine/lib/glfw/cmake_uninstall.cmake
+	/usr/bin/cmake -P /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/mty/Documents/graphics-engine/lib/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mty/Documents/graphics-engine/lib/glfw /home/mty/Documents/graphics-engine/lib/glfw /home/mty/Documents/graphics-engine/lib/glfw /home/mty/Documents/graphics-engine/lib/glfw /home/mty/Documents/graphics-engine/lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

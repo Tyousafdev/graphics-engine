@@ -4,8 +4,8 @@ CC = clang
 CFLAGS = -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing
 CFLAGS += -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression
 CFLAGS += -Wno-gnu-compound-literal-initializer -Wno-gnu-zero-variadic-macro-arguments
-CFLAGS += -Iimgui -Ilib/glm -Ilib/glad/include -Ilib/glfw/include -Iheader -fbracket-depth=1024
-LDFLAGS = lib/glad/src/glad.o  lib/glfw/src/libglfw3.a  -lm
+CFLAGS += -Iimgui  -Ilib/glm -Ilib/glm/gtc -Ilib/glad/include -Ilib/glfw/include -Iheader -fbracket-depth=1024
+LDFLAGS = lib/glad/src/glad.o  lib/glfw/src/libglfw3.a -lm
 
 # GLFW required frameworks on OSX
 

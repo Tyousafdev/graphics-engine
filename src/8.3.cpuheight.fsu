@@ -1,0 +1,62 @@
+#version 330 core
+
+out vec4 FragColor;
+
+in float Height;
+in vec2 fTexCoord;
+uniform float theTime;
+
+float Hash21(vec2 p)
+{
+   p = fract(p * vec2(149.31, 976.43));
+   p += dot(p, p + 61.9);
+   return fract(p.x * p.y);
+}
+
+vec3 randomGrid(float gb, int type)
+{
+   float gb2 = 1.0f / gb;
+   vec2 uv = gb * fTexCoord;
+   vec2 id = floor(uv);
+   if (type == 0) 
+       return (vec3(0.,0.,Hash21(id * gb2)));
+   if (type == 1) return (vec3(0.,Hash21( (id + gb) * gb2), 0. ));
+   if (type == 2) return (vec3(Hash21( (id + (gb * 2.0f)) * gb2)));
+   return vec3( Hash21(id * gb2), Hash21( (id + gb) * gb2), Hash21( (id + (gb * 2.0f)) * gb2) );
+}
+
+vec2 N22(vec2 p)
+{
+    vec3 a = fract(p.xyx * vec3( 123.34, 234.34, 345.65) );
+    a += dot(a, a + 34.45);
+    return fract( vec2(a.x * a.y, a.y * a.z) );
+}
+
+vec3 voronoi(float cubeGrid)
+{
+    vec2 uv = fTexCoord * 2.0f - vec2( 1.0f );
+    float m = 0.0f;
+    float minDist = 100.0f;
+    float cellIndex = 0.0f;
+    for (float i=0.0f; i < 25.0f + cubeGrid; i++)
+    {
+        vec2 n = N22( vec2(i, i + 51.87f) );
+        vec2 p = sin( n * theTime);
+        float d = length( uv - p );
+        m += smoothstep( 0.02, 0.01, d );
+        if ( d < minDist )
+        {
+            minDist = d;
+            cellIndex = i;
+        }
+    }
+    return vec3(0.,0.,1.0f) * minDist * 4.0f;
+}
+
+void main()
+{
+    float h = Height;
+    if (h > 15.0f) FragColor = vec4(randomGrid(24.0f, 2) * (5.0 - (20.0-h)) * 0.2f, 1.0f);
+    if (h > 10.0f && h <= 15.0f) FragColor = vec4(randomGrid(24.0f, 1) * (15.0-h) * 0.1f, 1.0f);
+    if (h <= 10.0f) FragColor = vec4(voronoi(32.0f) * 0.7f, 1.0f);
+}

@@ -1,7 +1,7 @@
 examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o: \
- /home/mty/Documents/graphics-engine/lib/glfw/deps/tinycthread.c \
+ /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/deps/tinycthread.c \
  /usr/include/stdc-predef.h \
- /home/mty/Documents/graphics-engine/lib/glfw/deps/tinycthread.h \
+ /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/deps/tinycthread.h \
  /usr/include/time.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

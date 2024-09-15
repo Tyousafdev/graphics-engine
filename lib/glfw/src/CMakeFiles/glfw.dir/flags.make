@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/mty/Documents/graphics-engine/lib/glfw/include -I/home/mty/Documents/graphics-engine/lib/glfw/src
+C_INCLUDES = -I/home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/include -I/home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/src
 
 C_FLAGS = -std=c99 -fPIC -Wall
 

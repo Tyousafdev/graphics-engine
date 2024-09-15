@@ -1,4 +1,4 @@
-# Install script for directory: /home/mty/Documents/graphics-engine/lib/glfw/tests
+# Install script for directory: /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

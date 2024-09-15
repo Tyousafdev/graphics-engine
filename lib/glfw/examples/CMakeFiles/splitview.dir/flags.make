@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mty/Documents/graphics-engine/lib/glfw/deps -I/home/mty/Documents/graphics-engine/lib/glfw/include
+C_INCLUDES = -I/home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/deps -I/home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/include
 
 C_FLAGS = -std=gnu99
 

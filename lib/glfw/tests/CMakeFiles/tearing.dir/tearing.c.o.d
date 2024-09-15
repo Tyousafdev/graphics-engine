@@ -1,8 +1,8 @@
 tests/CMakeFiles/tearing.dir/tearing.c.o: \
- /home/mty/Documents/graphics-engine/lib/glfw/tests/tearing.c \
+ /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/tests/tearing.c \
  /usr/include/stdc-predef.h \
- /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/gl.h \
- /home/mty/Documents/graphics-engine/lib/glfw/deps/glad/khrplatform.h \
+ /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/deps/glad/gl.h \
+ /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/deps/glad/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -19,7 +19,7 @@ tests/CMakeFiles/tearing.dir/tearing.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/mty/Documents/graphics-engine/lib/glfw/include/GLFW/glfw3.h \
+ /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -63,7 +63,7 @@ tests/CMakeFiles/tearing.dir/tearing.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/mty/Documents/graphics-engine/lib/glfw/deps/linmath.h \
+ /home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/deps/linmath.h \
  /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \

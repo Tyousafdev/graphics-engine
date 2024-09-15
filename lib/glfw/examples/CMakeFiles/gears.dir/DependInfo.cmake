@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mty/Documents/graphics-engine/lib/glfw/deps/glad_gl.c" "examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o" "gcc" "examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o.d"
-  "/home/mty/Documents/graphics-engine/lib/glfw/examples/gears.c" "examples/CMakeFiles/gears.dir/gears.c.o" "gcc" "examples/CMakeFiles/gears.dir/gears.c.o.d"
+  "/home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/deps/glad_gl.c" "examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o" "gcc" "examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o.d"
+  "/home/mty/Documents/graphics-engine-height-map-bu/lib/glfw/examples/gears.c" "examples/CMakeFiles/gears.dir/gears.c.o" "gcc" "examples/CMakeFiles/gears.dir/gears.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
