@@ -2,6 +2,89 @@
 
 
 
+An experimental **OpenGL-based graphics engine** written in C++.  
+This project is a sandbox for learning and implementing modern graphics programming concepts such as rendering pipelines, camera systems, lighting, and procedural terrain generation.
+
+![triangle demo](docs/screenshots/triangle.png)  
+*First rendered triangle with ImGui controls*
+
+---
+
+## ✨ Features
+- ✅ Basic OpenGL setup with GLFW
+- ✅ Render colored triangle
+- ✅ ImGui integration for debugging and controls
+- ✅ Cube rendering
+- ✅ Procedural terrain using Perlin noise
+- 🚧 Work in progress: camera system, lighting, textures
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+Make sure you have the following installed:
+- [OpenGL](https://www.opengl.org/)
+- [GLFW](https://www.glfw.org/)
+- [GLM](https://github.com/g-truc/glm)
+- [ImGui](https://github.com/ocornut/imgui)
+- A C++17 compatible compiler (g++, clang, MSVC)
+
+On Ubuntu/Debian:
+```bash
+sudo apt-get update
+sudo apt-get install build-essential cmake libglfw3-dev libglm-dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 + todo
 -   make cube
 -   implement camera
